@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+<h1>Trabajo Integrador<h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Programación Dinámica
+Esta consigna describe los pasos a seguir para completar el Trabajo Integrador
+Propósito de Enseñanza: Consolidar los conocimientos adquiridos sobre manipulación del
+DOM, animaciones y uso de librerías JavaScript, trabajando tanto con JavaScript nativo
+como con React.
+## Objetivo de Aprendizaje: Se espera que los estudiantes puedan:
+● _Usar JavaScript y React para manipular el DOM de manera dinámica._
+● Implementar animaciones avanzadas con GSAP y "Anime.js".
+● Integrar librerías como jQuery en un entorno React.
+● Reflexionar sobre las diferencias entre trabajar con tecnologías nativas y las
+librerías.
+Duración: Disponible desde el lunes 21/10/2024 hasta el 03/11/2024 23:59hs.
+Pasos para llevar a cabo la actividad
+Sección 1: Manipulación del DOM
+JavaScript nativo
+● Implementar un botón que cambie el color de fondo y la posición de un elemento del
+DOM.
+React
+● Repetir la misma funcionalidad anterior usando hooks de estado en un componente
+de React.
+Sección 2: Efectos de Ocultamiento con jQuery
+Crear una galería de imágenes o una lista de elementos.
+Permitir mostrar y ocultar los elementos con un botón que utilice jQuery y efectos de
+transición suave.
+Esta funcionalidad debe integrarse dentro de un componente React usando useEffect y
+useRef.
+Sección 3: Animaciones con GSAP
+Implementar un botón en React que active una animación con GSAP.
+La animación debe:
+● Cambiar color, tamaño y posición de un cuadro en secuencia.
+● Controlar la activación/desactivación de la animación con un hook de estado.
+Sección 4: Animaciones en Secuencia con Anime.js
+Generar dinámicamente una lista de elementos a partir de un estado en React.
+Usar Anime.js para animar los elementos en secuencia, agregando un efecto de rebote al
+final.
+Incluir un input que permita al usuario ajustar la velocidad de la animación en tiempo real.
+Medio de entrega de la Actividad
+Deberán subir a la plataforma un comprimido que contenga todos los archivos que utilizaron
+para la resolución de la consigna (tanto para React como para JavaScript nativo), y un
+documento de texto (docx/txt/pdf...) con el análisis y reflexión de la actividad.
+Criterios de Evaluación
+Se tendrá en cuenta la entrega en tiempo y forma, y su correcta resolución teniendo en
+cuenta la implementación de JavaScript, React y jQuery. El uso adecuado de GSAP y
+Anime.js para animaciones avanzadas. Código claro y organizado, dividido en componentes
+React.
+AAcciones del tutor para esta actividad
+Estarán a disposición el foro de consultas, y los encuentros sincrónicos programados en el
+cronograma para evacuar dudas respecto a la actividad.
