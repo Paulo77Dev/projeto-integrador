@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { gsap } from "gsap";
-import "./styles.css";
+import "../../Styles/Section3.css";
 
 function GSAPAnimation() {
     const [animating, setAnimating] = useState(false);

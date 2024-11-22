@@ -4,7 +4,7 @@ import DOMReact from "./components/Section1/DOMReact";
 import Gallery from "./components/Section2/Gallery";
 import GSAPAnimation from "./components/Section3/GSAPAnimation";
 import AnimeAnimation from "./components/Section4/AnimeAnimation";
-import "./styles.css";
+import "./Styles/App.css";
 
 function App() {
     return (

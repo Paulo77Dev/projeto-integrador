@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import $ from "jquery";
-import "./styles.css";
+import "../../Styles/Section2.css";
+
 
 function Gallery() {
     const galleryRef = useRef();

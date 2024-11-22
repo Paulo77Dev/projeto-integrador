@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import anime from "animejs";
-import "./styles.css";
+import "../../Styles/Section4.css";
 
 function AnimeAnimation() {
     const [items, setItems] = useState(["Item 1", "Item 2", "Item 3"]);
