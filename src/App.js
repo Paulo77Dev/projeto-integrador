@@ -9,7 +9,7 @@ import "./Styles/App.css";
 function App() {
     return (
         <div>
-            <h1>Trabalho Integrador</h1>
+            <h1>Trabajo Integrador - Paulo Madson da Silva</h1>
             <div className="app-container">
                 <DOMNative />
                 <DOMReact />

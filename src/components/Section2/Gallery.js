@@ -2,66 +2,66 @@ import React, { useState, useEffect, useRef } from "react";
 import $ from "jquery";
 import "../../Styles/Section2.css";
 
-function Gallery() {
-  const galleryRef = useRef();
-  const [imageURL, setImageURL] = useState("");  // Para controlar a URL da nova imagem
-  const [images, setImages] = useState([]);  // Array para armazenar as imagens
+function Galeria() {
+  const galeriaRef = useRef();
+  const [urlImagen, setUrlImagen] = useState("");  // Para controlar la URL de la nueva imagen
+  const [imagenes, setImagenes] = useState([]);  // Array para almacenar las imágenes
 
   useEffect(() => {
-    const $gallery = $(galleryRef.current);
+    const $galeria = $(galeriaRef.current);
     $("#toggleBtn").click(() => {
-      $gallery.children("img").fadeToggle();  // Alterna a visibilidade das imagens
+      $galeria.children("img").fadeToggle();  // Alterna la visibilidad de las imágenes
     });
   }, []);
 
-  // Função para adicionar uma nova imagem
-  const handleAddImage = () => {
-    if (imageURL) {
-      if (isValidURL(imageURL) || isValidBase64(imageURL)) {
-        setImages([...images, imageURL]);  // Adiciona a nova imagem ao array
-        setImageURL("");  // Limpa o campo de input
+  // Función para agregar una nueva imagen
+  const manejarAgregarImagen = () => {
+    if (urlImagen) {
+      if (esUrlValida(urlImagen) || esBase64Valido(urlImagen)) {
+        setImagenes([...imagenes, urlImagen]);  // Agrega la nueva imagen al array
+        setUrlImagen("");  // Limpia el campo de entrada
       } else {
-        alert("Por favor, insira uma URL válida de imagem ou uma string base64!");
+        alert("¡Por favor, ingresa una URL de imagen válida o una cadena base64!");
       }
     }
   };
 
-  // Função para validar a URL da imagem
-  const isValidURL = (url) => {
+  // Función para validar la URL de la imagen
+  const esUrlValida = (url) => {
     const regex = /(https?:\/\/.*\.(?:png|jpg|jpeg|gif|bmp))/i;
     return regex.test(url);
   };
 
-  // Função para validar a string base64
-  const isValidBase64 = (string) => {
-    // Verifica se a string começa com "data:image"
+  // Función para validar la cadena base64
+  const esBase64Valido = (cadena) => {
+    // Verifica si la cadena empieza con "data:image"
     const regex = /^data:image\/(png|jpg|jpeg|gif|bmp);base64,/i;
-    return regex.test(string);
+    return regex.test(cadena);
   };
 
   return (
     <div className="section">
-      <h2>Galeria de Imagens</h2>
+      <h2>Galería de Imágenes</h2>
       <button id="toggleBtn">Mostrar/Ocultar</button>
 
-      {/* Campo para inserir uma nova imagem */}
+      {/* Campo para ingresar una nueva imagen */}
       <div>
         <input
           type="text"
-          placeholder="URL ou base64 da nova imagem"
-          value={imageURL}
-          onChange={(e) => setImageURL(e.target.value)}  // Atualiza o estado com o valor inserido
+          placeholder="URL o base64 de la nueva imagen"
+          value={urlImagen}
+          onChange={(e) => setUrlImagen(e.target.value)}  // Actualiza el estado con el valor ingresado
         />
-        <button onClick={handleAddImage}>Adicionar Imagem</button>
+        <button onClick={manejarAgregarImagen}>Agregar Imagen</button>
       </div>
 
-      <div ref={galleryRef} className="gallery">
-        {images.map((src, index) => (
-          <img key={index} src={src} alt={`Imagem ${index + 1}`} />
+      <div ref={galeriaRef} className="galeria">
+        {imagenes.map((src, index) => (
+          <img key={index} src={src} alt={`Imagen ${index + 1}`} />
         ))}
       </div>
     </div>
   );
 }
 
-export default Gallery;
+export default Galeria;

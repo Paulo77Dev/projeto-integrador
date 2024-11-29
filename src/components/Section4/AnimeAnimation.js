@@ -7,14 +7,14 @@ function AnimeAnimation() {
     const [speed, setSpeed] = useState(1000);
     const itemsRef = useRef([]);
 
-    // Animar todos os itens sempre que 'items' mudar
+    // Animar todos los elementos siempre que 'items' cambie
     useEffect(() => {
         anime({
             targets: itemsRef.current,
-            translateY: [-50, 0],  // Animação de movimento vertical
+            translateY: [-50, 0],  // Animación de movimiento vertical
             elasticity: 600,
             duration: speed,
-            delay: anime.stagger(200),  // Espacamento entre as animações dos itens
+            delay: anime.stagger(200),  // Espaciado entre las animaciones de los elementos
         });
     }, [speed, items]);
 
@@ -31,12 +31,12 @@ function AnimeAnimation() {
                 value={speed}
                 onChange={(e) => setSpeed(Number(e.target.value))}
             />
-            <button onClick={addItem}>Adicionar Item</button>
+            <button onClick={addItem}>Agregar Elemento</button>
             <div>
                 {items.map((item, index) => (
                     <div
                         key={index}
-                        ref={(el) => (itemsRef.current[index] = el)} // Referência para cada item
+                        ref={(el) => (itemsRef.current[index] = el)} // Referencia para cada elemento
                         className="anime-item"
                     >
                         {item}

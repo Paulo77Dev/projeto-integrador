@@ -3,27 +3,27 @@ import { gsap } from "gsap";
 import "../../Styles/Section3.css";
 
 function GSAPAnimation() {
-    const [position, setPosition] = useState("middle"); // Posição inicial: meio
+    const [position, setPosition] = useState("middle"); // Posición inicial: medio
 
     const handleAnimation = () => {
-        let xValue = 0; // Valor inicial para o movimento
-        let scaleValue = 1; // Valor inicial para escala
-        let color = "red"; // Cor padrão
+        let xValue = 0; // Valor inicial para el movimiento
+        let scaleValue = 1; // Valor inicial para la escala
+        let color = "red"; // Color predeterminado
 
         if (position === "middle") {
-            // Vai para direita
+            // Se mueve hacia la derecha
             xValue = 100;
             scaleValue = 1.5;
             color = "green";
             setPosition("right");
         } else if (position === "right") {
-            // Vai para esquerda
+            // Se mueve hacia la izquierda
             xValue = -100;
             scaleValue = 1.5;
             color = "blue";
             setPosition("left");
         } else if (position === "left") {
-            // Volta para o meio
+            // Regresa al medio
             xValue = 0;
             scaleValue = 1;
             color = "red";
@@ -48,4 +48,3 @@ function GSAPAnimation() {
 }
 
 export default GSAPAnimation;
-    

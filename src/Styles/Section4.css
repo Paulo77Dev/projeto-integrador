@@ -1,16 +1,15 @@
-/* Estilo para o contêiner de itens com barra de rolagem */
+/* Estilo para el contenedor de elementos con barra de desplazamiento */
 .section {
     margin: 20px;
-    max-height: 300px; /* Defina a altura máxima do contêiner */
-    overflow-y: auto;  /* Adiciona a rolagem vertical quando necessário */
-  }
+    max-height: 300px; /* Definir la altura máxima del contenedor */
+    overflow-y: auto;  /* Añadir el desplazamiento vertical cuando sea necesario */
+}
   
-  /* Estilo do box (não alterado) */
-  .box {
+/* Estilo de la caja (no modificado) */
+.box {
     width: 100px;
     height: 100px;
     background-color: red;
     margin-top: 10px;
     transition: all 0.5s;
-  }
-  
+}

@@ -6,16 +6,16 @@ html, body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   color: #333;
-  height: 100%; /* Necessário para garantir o layout flex */
+  height: 100%; /* Necesario para asegurar el diseño flex */
 }
 
 /* Layout principal */
 body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Alinha os itens no topo */
-  align-items: center; /* Centraliza horizontalmente */
-  min-height: 100vh; /* Garante altura mínima para o layout */
+  justify-content: flex-start; /* Alinea los elementos en la parte superior */
+  align-items: center; /* Centra horizontalmente */
+  min-height: 100vh; /* Garantiza una altura mínima para el diseño */
   padding: 20px;
 }
 
@@ -25,21 +25,21 @@ h1 {
   padding-top: 20px;
 }
 
-/* Contêiner das seções para organizar os itens lado a lado */
+/* Contenedor de secciones para organizar los elementos uno al lado del otro */
 .app-container {
   display: flex;
-  flex-wrap: wrap;  /* Permite que os itens se movam para a linha seguinte, se necessário */
-  justify-content: space-between;  /* Distribui os itens com espaçamento entre eles */
-  gap: 20px;  /* Espaço entre os itens */
+  flex-wrap: wrap;  /* Permite que los elementos se muevan a la siguiente línea si es necesario */
+  justify-content: space-between;  /* Distribuye los elementos con espacio entre ellos */
+  gap: 20px;  /* Espacio entre los elementos */
   margin-top: 20px;
   width: 100%;
-  max-width: 1200px;  /* Limita a largura máxima do conteúdo */
+  max-width: 1200px;  /* Limita el ancho máximo del contenido */
 }
 
-/* Estilo das seções */
+/* Estilo de las secciones */
 .section {
-  flex: 1; /* Permite que cada seção ocupe o espaço disponível */
-  min-width: 250px; /* Garante que a seção tenha no mínimo 250px de largura */
+  flex: 1; /* Permite que cada sección ocupe el espacio disponible */
+  min-width: 250px; /* Asegura que la sección tenga al menos 250px de ancho */
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -48,7 +48,7 @@ h1 {
   text-align: center;
 }
 
-/* Botões */
+/* Botones */
 button {
   padding: 10px 20px;
   margin: 10px 5px;
@@ -75,7 +75,7 @@ input[type="number"] {
   max-width: 300px;
 }
 
-/* Estilo das caixas animadas */
+/* Estilo de las cajas animadas */
 .box {
   width: 100px;
   height: 100px;
@@ -88,7 +88,7 @@ input[type="number"] {
   margin-top: 20px;
 }
 
-/* Galeria */
+/* Galería */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -118,14 +118,14 @@ input[type="number"] {
   transition: all 0.3s;
 }
 
-/* Responsividade */
+/* Responsividad */
 @media (max-width: 768px) {
   .section {
     padding: 15px;
   }
 
   button {
-    width: 100%; /* Botões ocupam toda a largura no mobile */
+    width: 100%; /* Los botones ocupan todo el ancho en móviles */
   }
 
   .box {
@@ -134,13 +134,13 @@ input[type="number"] {
   }
 
   .gallery img {
-    width: 100px; /* Reduz tamanho das imagens */
+    width: 100px; /* Reduce el tamaño de las imágenes */
     height: 100px;
   }
 
-  /* Ajuste para responsividade das seções */
+  /* Ajuste para la responsividad de las secciones */
   .app-container {
-    justify-content: center;  /* Centraliza as seções em telas menores */
+    justify-content: center;  /* Centraliza las secciones en pantallas más pequeñas */
   }
 }
 
@@ -159,7 +159,7 @@ input[type="number"] {
   }
 
   .gallery img {
-    width: 80px; /* Reduz ainda mais para telas pequenas */
+    width: 80px; /* Reduce aún más para pantallas pequeñas */
     height: 80px;
   }
 }
