@@ -1,10 +1,68 @@
+/* Section */
 .section {
     margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
+
+/* Caixa (Box) */
 .box {
     width: 100px;
     height: 100px;
     background-color: red;
     margin-top: 10px;
     transition: all 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Botões */
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Input para URL da nova imagem */
+input[type="text"] {
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Responsivo */
+    max-width: 300px;
 }
