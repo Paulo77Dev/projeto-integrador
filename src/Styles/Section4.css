@@ -1,10 +1,16 @@
+/* Estilo para o contêiner de itens com barra de rolagem */
 .section {
     margin: 20px;
-}
-.box {
+    max-height: 300px; /* Defina a altura máxima do contêiner */
+    overflow-y: auto;  /* Adiciona a rolagem vertical quando necessário */
+  }
+  
+  /* Estilo do box (não alterado) */
+  .box {
     width: 100px;
     height: 100px;
     background-color: red;
     margin-top: 10px;
     transition: all 0.5s;
-}
+  }
+  

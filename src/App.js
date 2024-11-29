@@ -10,11 +10,13 @@ function App() {
     return (
         <div>
             <h1>Trabalho Integrador</h1>
-            <DOMNative />
-            <DOMReact />
-            <Gallery />
-            <GSAPAnimation />
-            <AnimeAnimation />
+            <div className="app-container">
+                <DOMNative />
+                <DOMReact />
+                <Gallery />
+                <GSAPAnimation />
+                <AnimeAnimation />
+            </div>
         </div>
     );
 }
