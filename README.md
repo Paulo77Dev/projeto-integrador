@@ -6,7 +6,7 @@ Propósito de Enseñanza: Consolidar los conocimientos adquiridos sobre manipula
 DOM, animaciones y uso de librerías JavaScript, trabajando tanto con JavaScript nativo
 como con React.
 ## Objetivo de Aprendizaje: Se espera que los estudiantes puedan:
-● _Usar JavaScript y React para manipular el DOM de manera dinámica._
+###_Usar JavaScript y React para manipular el DOM de manera dinámica._
 ● Implementar animaciones avanzadas con GSAP y "Anime.js".
 ● Integrar librerías como jQuery en un entorno React.
 ● Reflexionar sobre las diferencias entre trabajar con tecnologías nativas y las
